@@ -1,0 +1,28 @@
+Para saber mais: sistemas operacionais e suporte
+
+A falta de suporte é apenas questão de tempo nos sistemas operacionais, como o caso do ubuntu, no qual todas as versões LTS (Suporte de longo termo) têm suporte de apenas 5 anos. 
+Sendo assim, mesmo que a sua aplicação funcione perfeitamente hoje, ela pode apresentar problemas com uma versão mais recente do sistema.
+
+E é muito normal que sistemas desatualizados fiquem vulneráveis a ataques e roubos de dados após um tempo, então sempre mantenha os seus sistemas operacionais e os sistemas da sua aplicação atualizados para evitar problemas.
+
+Além disso, não deixe para testar as suas aplicações em novos sistemas operacionais em cima da hora de fazer uma transição, pois erros podem surgir e a sua aplicação pode acabar vulnerável ou fora do ar até que todos os erros e problemas sejam corrigidos.
+
+
+
+O Docker traz várias vantagens em relação a máquinas virtuais que eram muito usadas antigamente para manter as nossas aplicações isoladas, impedindo que uma interfira na outra.
+
+Entre essas vantagens, temos:
+
+Velocidade para execução, em que temos a aplicação em execução em poucos segundos depois da sua criação;
+Menos complexidade, já que apenas o necessário para a aplicação está dentro do container;
+Maior segurança, pois as máquinas virtuais precisam ser atualizadas uma a uma, enquanto se atualizarmos a imagem do container apenas precisamos iniciá-los novamente.
+Além disso, hoje o docker é muito utilizado em infraestruturas de nuvem pois é fácil criar novas instâncias para distribuir a carga entre elas, tornando assim a infraestrutura mais barata.
+
+__________________________________________________________________________________________
+Depois de criar o docker file rodar os comandos:
+- go build main.go (compilar todo o projeto e vai criar um arquivo main)
+- docker build . (o ponto vai buscar pelo docker file)
+- docker images (ver as imagens)
+
+
+__________________________________________________________________________________________
